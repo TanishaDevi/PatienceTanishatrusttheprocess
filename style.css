@@ -1,1 +1,87 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
 
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 20px;
+  background: rgba(10,10,25,0.6);
+  backdrop-filter: blur(12px);
+  z-index: 9999;
+}
+
+.links a {
+  color: #b99cff;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+/* CONTAINER */
+.container {
+  padding: 120px 20px;
+  position: relative;
+  z-index: 2;
+}
+
+/* STAR CARDS */
+.star-card {
+  background: rgba(255,255,255,0.06);
+  padding: 16px;
+  margin: 12px 0;
+  border-radius: 14px;
+  border: 1px solid rgba(255,255,255,0.1);
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+}
+
+.star-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(160,100,255,0.4);
+}
+
+/* GLOW TYPES */
+.glow-blue { border-left: 3px solid #4cc9f0; }
+.glow-green { border-left: 3px solid #80ffdb; }
+.glow-yellow { border-left: 3px solid #ffd166; }
+.glow-purple { border-left: 3px solid #b517ff; }
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: #8b5cf6;
+  color: white;
+  cursor: pointer;
+}
+
+/* GALAXY BACKGROUND */
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  pointer-events: none;
+}
